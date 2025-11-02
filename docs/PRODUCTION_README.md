@@ -2,32 +2,32 @@
 
 A comprehensive production deployment system for the ConvNeXt computer vision pipeline supporting classification, object detection, and OCR tasks.
 
-## 🚀 Features
+### Features
 
-### High Priority ✅
+### High Priority
 - **Inference Script**: Standalone inference for production predictions
 - **Docker Containerization**: Complete Docker setup with docker-compose
 - **Input Validation**: Robust validation and error handling for data preprocessing
 - **Model Serialization**: Export models to ONNX and TorchScript formats
 
-### Medium Priority ✅
+### Medium Priority
 - **FastAPI REST API**: High-performance API for model serving
 - **Prediction Logging**: Comprehensive logging and monitoring system
 - **Data Validation Pipeline**: Multi-stage validation for inputs
 - **Visualization Tools**: Tools for visualizing predictions
 
-### Nice to Have ✅
+### Nice to Have
 - **Model Explainability**: Grad-CAM for understanding predictions
 - **Automated Retraining**: Pipeline for automatic model retraining
 - **A/B Testing Framework**: Compare model versions in production
 - **Model Versioning System**: Track and manage model versions
 
-### Additional ✅
+### Additional
 - **Comprehensive Documentation**: Detailed guides and API documentation
 - **Test Suite**: Unit tests for all components
 - **CI/CD Pipeline**: Automated testing and deployment
 
-## 📁 Project Structure
+### Project Structure
 
 ```
 production/
@@ -67,7 +67,7 @@ docker-compose.yml           # Multi-container setup
 requirements.txt             # Python dependencies
 ```
 
-## 🔧 Installation
+### Installation
 
 ### Prerequisites
 
@@ -87,7 +87,7 @@ cd gemastik
 pip install -r requirements.txt
 ```
 
-## 🎯 Quick Start
+### Quick Start
 
 ### 1. Train a Model
 
@@ -127,7 +127,7 @@ curl -X POST "http://localhost:8000/predict" \
   -F "file=@test.jpg"
 ```
 
-## 🐳 Docker Deployment
+### Docker Deployment
 
 ### Build and Run
 
@@ -159,7 +159,7 @@ docker-compose logs -f api
 docker-compose down
 ```
 
-## 📊 Usage Examples
+### Usage Examples
 
 ### Batch Inference
 
@@ -265,13 +265,13 @@ python production/retraining/pipeline.py \
   --config retraining_config.json
 ```
 
-## 📖 Documentation
+### Documentation
 
 - [Deployment Guide](docs/DEPLOYMENT.md) - Complete deployment instructions
 - [API Reference](docs/API.md) - REST API documentation
 - [Main README](README.md) - Training pipeline documentation
 
-## 🧪 Testing
+### Testing
 
 ```bash
 # Run all tests
@@ -284,7 +284,7 @@ pytest tests/ --cov=production --cov-report=html
 pytest tests/test_production.py::test_input_validator -v
 ```
 
-## 🔄 CI/CD
+### CI/CD
 
 The project includes a GitHub Actions workflow for:
 - Code linting (flake8, black, isort)
@@ -294,7 +294,7 @@ The project includes a GitHub Actions workflow for:
 
 See `.github/workflows/ci-cd.yml` for details.
 
-## 📈 Monitoring
+### Monitoring
 
 ### Metrics
 
@@ -309,7 +309,7 @@ Access metrics at:
 - Errors: `logs/errors.jsonl`
 - Metrics: `logs/metrics.json`
 
-## 🛠️ Configuration
+### Configuration
 
 ### Environment Variables
 
@@ -325,7 +325,7 @@ Access metrics at:
 - `ab_test_config.json`: A/B testing configuration
 - `docker-compose.yml`: Multi-container orchestration
 
-## 🤝 Contributing
+### Contributing
 
 Contributions are welcome! Please:
 1. Fork the repository
@@ -334,24 +334,20 @@ Contributions are welcome! Please:
 4. Add tests
 5. Submit a pull request
 
-## 📝 License
+### License
 
 This project is licensed under the MIT License.
 
-## 🙏 Acknowledgments
+### Acknowledgments
 
 - PyTorch team for the deep learning framework
 - timm library for model architectures
 - FastAPI for the web framework
 - The open-source community
 
-## 📧 Support
+### Support
 
 For issues and questions:
 - Open an issue on GitHub
 - Check the documentation
 - Contact the development team
-
----
-
-**Made with ❤️ for production ML deployment**

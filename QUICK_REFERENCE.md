@@ -1,6 +1,6 @@
 # Quick Reference Guide
 
-## 🚀 Common Commands
+### Common Commands
 
 ### Training
 ```bash
@@ -198,7 +198,7 @@ pytest tests/test_production.py::test_input_validator -v
 pytest tests/ -v -m "not slow"
 ```
 
-## 📊 API Quick Reference
+### API Quick Reference
 
 ### Endpoints
 
@@ -244,7 +244,7 @@ curl -X POST http://localhost:8000/predict/batch \
   -F "files=@img2.jpg"
 ```
 
-## 🔧 Configuration Files
+### Configuration Files
 
 ### Docker Compose
 ```yaml
@@ -282,7 +282,7 @@ services:
 }
 ```
 
-## 🐛 Troubleshooting
+### Troubleshooting
 
 **Model not loading:**
 ```bash
@@ -312,7 +312,7 @@ python -m production.api.server --port 8001
 lsof -ti:8000 | xargs kill -9
 ```
 
-## 📈 Monitoring
+### Monitoring
 
 **View logs:**
 ```bash
@@ -335,7 +335,7 @@ curl http://localhost:8000/metrics
 - URL: http://localhost:3000
 - Default credentials: admin/admin
 
-## 🔒 Security Notes
+### Security Notes
 
 For production deployment:
 1. Enable HTTPS
@@ -347,14 +347,14 @@ For production deployment:
 7. Enable CORS properly
 8. Set up firewall rules
 
-## 📚 Documentation Links
+### Documentation Links
 
 - [Deployment Guide](docs/DEPLOYMENT.md)
 - [API Reference](docs/API.md)
 - [Production README](docs/PRODUCTION_README.md)
 - [Implementation Summary](IMPLEMENTATION_SUMMARY.md)
 
-## 🆘 Support
+### Support
 
 **Issues:**
 - Check documentation

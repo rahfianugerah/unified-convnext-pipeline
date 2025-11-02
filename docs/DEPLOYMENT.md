@@ -400,14 +400,10 @@ Or use a load balancer (nginx, HAProxy) with multiple instances.
 
 **Solution**: Check logs, verify port availability, ensure model is loaded.
 
-## Support
+### Support
 
 For issues and questions:
 - Check documentation
 - Review logs
 - Open an issue on GitHub
 - Contact the development team
-
-## License
-
-This project is licensed under the MIT License.
